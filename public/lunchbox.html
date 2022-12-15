@@ -110,7 +110,7 @@
                                 <div class="text">
                                     <ul>
                                         <li v-once="suggest_weight">
-                                            {{suggest_weight[0]}}
+                                            {{suggest_weight[0].toFixed(2)}}
                                         </li>
                                     </ul>
                                     
@@ -123,7 +123,7 @@
                                 <div class="text">
                                         <ul>
                                             <li v-once="suggest_weight">
-                                                {{suggest_weight[1]}}
+                                                {{suggest_weight[1].toFixed(2)}}
                                             </li>
                                         </ul>
                                 </div>
@@ -135,7 +135,7 @@
                                 <div class="text">  
                                     <ul>
                                         <li v-once="suggest_weight">
-                                            {{suggest_weight[2]}}
+                                            {{suggest_weight[2].toFixed(2)}}
                                         </li>
                                     </ul>
                                 </div>
@@ -147,7 +147,7 @@
                                 <div class="text">  
                                     <ul>
                                         <li v-modle.number="suggest_weight">
-                                            {{sum}}
+                                            {{sum.toFixed(2)}}
                                         </li>
                                     </ul>
                                 </div>
@@ -320,6 +320,23 @@
                     <input type="checkbox" class="largerCheckbox" value="" name="" />白飯<br />
                     <input type="checkbox" class="largerCheckbox" value="" name="" />藜麥<br />
                     <input type="checkbox" class="largerCheckbox" value="" name="" />紫米<br />
+                </div>
+            </div>
+        </div>
+        <div class="checkout-address">
+            <div class="title-left">
+                <h3>訂購資訊</h3>
+            </div>
+            <div class="mb-3">
+                <label for="username">訂購人名稱 *</label>
+                <div class="input-group">
+                    <input required="required" id="name" type="text" class="form-control" id="username" placeholder="" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="username">訂購地址 *</label>
+                <div class="input-group">
+                    <input required="required" id="name" type="text" class="form-control" id="username" placeholder="" required>
                 </div>
             </div>
         </div>
@@ -540,7 +557,7 @@
         padding: 5px;
         text-align: center;
         /* background: #e5eecc; */
-        background: lightgoldenrodyellow;
+        background: rgb(252, 252, 230);
         border: solid 1px #c3c3c3;
         display: none;
         font-family: 'Arial';
